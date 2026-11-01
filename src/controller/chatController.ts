@@ -29,6 +29,9 @@ export const sendMessage = async(req:express.Request,res:express.Response) =>{
             role:"user",
             content:message.trim()
         })
+
+
+        const history = await messageModel.find({conversation:conversation._id}).sort({createdAt:-1}).limit(20)
     }catch(e){
 
     }
