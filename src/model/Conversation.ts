@@ -8,4 +8,4 @@ const conversationSchema = new Schema<IConversation>({
     title: { type: String, required: true },
 },{timestamps: true});
 
-export const conversationModel = mongoose.model("Conversation", conversationSchema);
+export const conversationModel = mongoose.model<IConversation>("Conversation", conversationSchema);
