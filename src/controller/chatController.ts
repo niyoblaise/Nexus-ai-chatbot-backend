@@ -32,6 +32,8 @@ export const sendMessage = async(req:express.Request,res:express.Response) =>{
 
 
         const history = await messageModel.find({conversation:conversation._id}).sort({createdAt:-1}).limit(20)
+
+        return res.status(200).json({message: "User message saved successfully", conversationId: conversation._id, history: history.reverse()});
     }catch(e){
 
     }
