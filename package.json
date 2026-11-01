@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/niyoblaise/Nexus-ai-chatbot-backend/issues"
   },
-  "homepage": "https://github.com/niyoblaise/Nexus-ai-chatbot-backend#readme"
+  "homepage": "https://github.com/niyoblaise/Nexus-ai-chatbot-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4"
+  }
 }
