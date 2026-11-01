@@ -2,7 +2,7 @@ import mongoose, {Schema} from "mongoose"
 
 interface IMessage{
     conversation: mongoose.Types.ObjectId,
-    role:string,
+    role:"user"|"assistant",
     content: string,
 }
 
