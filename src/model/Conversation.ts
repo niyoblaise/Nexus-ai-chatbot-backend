@@ -7,3 +7,4 @@ interface IConversation {
 const conversationSchema = new Schema<IConversation>({
     title: { type: String, required: true },
 },{timestamps: true});
+
