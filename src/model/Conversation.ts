@@ -5,7 +5,7 @@ interface IConversation {
 }
 
 const conversationSchema = new Schema<IConversation>({
-    title: { type: String, required: true },
+    title: { type: String, required: true,default:"New conversation" },
 },{timestamps: true});
 
 export const conversationModel = mongoose.model<IConversation>("Conversation", conversationSchema);
